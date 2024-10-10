@@ -1,0 +1,9 @@
+env/
+*.pyc
+*.pkl
+*.pth
+*.pt
+*.pth.tar
+*.tar
+*.zip
+*.rar

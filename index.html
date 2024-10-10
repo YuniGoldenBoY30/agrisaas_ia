@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de Plagas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Detección de Plagas</h1>
+        <form id="upload-form">
+            <input type="file" id="file-input" accept="image/*" required>
+            <button type="submit">Detectar Plagas</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Resultado de la Detección</h2>
+            <div class="image-container">
+                <div class="image-box">
+                    <h3>Imagen Original</h3>
+                    <img id="original-image" alt="Imagen Original">
+                </div>
+                <div class="image-box">
+                    <h3>Detección de Plagas</h3>
+                    <img id="prediction-image" alt="Detección de Plagas">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
