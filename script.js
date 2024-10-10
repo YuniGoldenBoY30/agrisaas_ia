@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.append('file', fileInput.files[0]);
 
         try {
-            const response = await axios.post('http://localhost:8000/predict', formData, {
+            const response = await axios.post('http://localhost:8800/predict', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
